@@ -1,14 +1,28 @@
 <html>
   <head>
     <linktype="text/css" rel="stylesheet" href="stylesheet.css"/>
+    
+    <!--script language="javascript" type="text/javascript">
+function playSound("Piano.wav") {
+document.getElementById("A").innerHTML=
+"<embed src=\""+Piano.wav+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+</script-->
+    
     <title>Letters</title>
   </head>
 <body>
+  
+  <!--audio>
+<source src=/music/Piano.wav>
+<embed src=/music/Piano>
+</audio-->
+  
   <div class="square">
     <div class="content">
       <div class="table">
         <div class="table-cell">
-          <h1>A</h1>
+          <h1 id="A"><a href="#" onclick="playSound('Piano.wav');">A</a></h1>
         </div>
       </div>
     </div>
